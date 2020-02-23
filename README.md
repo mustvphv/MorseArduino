@@ -1,7 +1,7 @@
 # MorseArduino
 
 
-Première étape du TP, on peut intéragir avec le bouton et écrire des phrases à partir du Monitor (dans l'interface de l'Arduino Web Editor)
+Première étape du TP, on peut intéragir avec le bouton et écrire des phrases (avec les lettres allant de A à F pour le moment)  à partir du Monitor (dans l'interface de l'Arduino Web Editor)
 qui seront ensuite traduits en Morse.
 
 
