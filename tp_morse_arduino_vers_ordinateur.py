@@ -1,27 +1,13 @@
-int buttonPin= 12;
-int var = 0;
+import serial
+import keyboard
+import readchar
+import time
+from playsound import playsound
 
 
+serial_port = serial.Serial(port = "/dev/ttyACM0")
 
-void setup(){
-  Serial.begin(9600);
-  pinMode(buttonPin, INPUT);
-}
-
-
-void loop(){
-
-  int buttonState = digitalRead(buttonPin);
-
-
-  buttonState = digitalRead(buttonPin);
-  if (buttonState == HIGH) {
-    var = 1;
-  }
-  
-  if(buttonState == LOW && var == 1){
-    Serial.println("appui sur le bouton");
-    var = 0;
-  }
-  
-}
+while True :
+    if serial_port.readline():
+        print(serial_port.readline())
+        playsound('./bip.mp3')
