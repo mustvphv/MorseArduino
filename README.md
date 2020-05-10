@@ -1,8 +1,14 @@
 # MorseArduino
 
 
-Première étape du TP, on peut intéragir avec le bouton et écrire des phrases (avec les lettres allant de A à F pour le moment)  à partir du Monitor (dans l'interface de l'Arduino Web Editor)
-qui seront ensuite traduits en Morse.
+Les programmes tp_morse_arduino_vers_ordinateur.ino et tp_morse_arduino_vers_ordinateur.py permettent la détection lorsqu'on appuie sur un bouton (il y a alors un fichier .mp3 qui est lancé sur l'ordinateur).
+
+Les programmes tp_morse_ordinateur_vers_arduino.ino et tp_morse_ordinateur_vers_arduino.py permettent la détection lorsqu'on appuie sur la touche A du clavier de l'ordinateur (Le buzzer lance une mélodie).
+
+
+Le programme tp_morse_ordinateur_vers_arduino.py doit être exécuté en tant que root (pour utiliser la biblothèque "keyboard").
+
+
 
 
 ## Sources
